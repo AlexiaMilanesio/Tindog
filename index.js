@@ -1,6 +1,9 @@
 import DogCharacter from "/Dog.js";
 import dogs from "/data.js";
 
+const account = document.getElementById("account"); // create profile
+const message = document.getElementById("message"); // send email
+
 function getNewDog() {
   const nextDogData = dogs.shift();
   return nextDogData ? new DogCharacter(nextDogData) : {};
@@ -23,9 +26,9 @@ function renderNewDog() {
 // all caught up function
 function renderEnd() {
   document.getElementById("main").innerHTML = `
-        <div class="end-message">
-            <p>You're all caught up</p>
-        </div>
+      <div class="end-message">
+          <p>You're all caught up</p>
+      </div>
     `;
 }
 
@@ -33,7 +36,7 @@ function renderEnd() {
 document.getElementById("like-btn").addEventListener("click", like);
 function like() {
   document.getElementById("tag").innerHTML = `
-        <img id="like-badge" src="/images/badge-like.png" alt="LIKE">
+      <img id="like-badge" src="/images/badge-like.png" alt="LIKE">
     `;
   renderNewDog();
 }
@@ -41,7 +44,7 @@ function like() {
 document.getElementById("nope-btn").addEventListener("click", dislike);
 function dislike() {
   document.getElementById("tag").innerHTML = `
-        <img id="nope-badge" src="/images/badge-nope.png" alt="NOPE">
+      <img id="nope-badge" src="/images/badge-nope.png" alt="NOPE">
     `;
   renderNewDog();
 }

@@ -5,7 +5,6 @@ body {
 
 .container {
   background-image: linear-gradient(#ffffff, #f6f7fb);
-  /* max-width: 300px; */
   height: 100vh;
   margin: auto;
   padding: 1em 2em;
@@ -20,6 +19,7 @@ header {
 }
 
 /* dog picture */
+
 .dog-picture-container {
   margin: auto;
   display: flex;
@@ -35,6 +35,7 @@ header {
 }
 
 /* picture badge */
+
 .top-left {
   position: absolute;
   top: -0.3em;
@@ -48,6 +49,7 @@ header {
 }
 
 /* picture text */
+
 .bottom-left {
   position: absolute;
   bottom: 1em;
@@ -69,6 +71,7 @@ header {
 }
 
 /* buttons */
+
 .btn-container {
   display: flex;
   justify-content: center;
@@ -103,7 +106,15 @@ header {
   cursor: poiner;
 }
 
+.header-icon,
+#like-icon:hover,
+#nope-icon:hover  {
+  cursor: pointer;
+}
+
+
 /* end message */
+
 .end-message {
   display: flex;
   justify-content: center;
@@ -116,6 +127,8 @@ header {
   border: 2px solid pink;
   border-radius: 5em;
 }
+
+/* responsive */
 
 @media (min-width: 500px) {
   .dog-picture-container {
@@ -136,5 +149,4 @@ header {
   .btn-container {
     margin-top: 5%;
   }
-
 }

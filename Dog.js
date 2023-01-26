@@ -14,7 +14,7 @@ class Dog {
   }
 
   getDogHtml() {
-    const { name, avatar, age, bio, hasBeenSwiped, hasBeenLiked } = this;
+    const { name, avatar, age, email, bio, hasBeenSwiped, hasBeenLiked } = this;
     const dogName = this.name.toLowerCase();
     let tag = this.getTag();
 
@@ -27,6 +27,7 @@ class Dog {
             <div class="bottom-left">
                 <p class="bottom-left-name"> ${name}, ${age}</p>
                 <p class="bottom-left-bio">${bio}</p>
+                <p id="dog-email" style="display: none;">${email}</p>
             </div>
         </div>
         `;
