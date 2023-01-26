@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.container {
+  background-image: linear-gradient(#ffffff, #f6f7fb);
+  max-width: 300px;
+  margin: auto;
+  padding: 1em 2em;
+  border: 1px solid #e9e9ea;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  height: 1.5em;
+}
+
+/* dog picture */
+.dog-picture-container {
+  position: relative;
+  color: white;
+}
+
+.dog-picture {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 0.5em 0;
+}
+
+/* picture badge */
+.top-left {
+  position: absolute;
+  top: -0.3em;
+  left: -0.1em;
+  transform: rotate(-30deg);
+}
+
+#nope-badge,
+#like-badge {
+  width: 40%;
+}
+
+/* picture text */
+.bottom-left {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  width: 100%;
+}
+
+.bottom-left-name {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.bottom-left-bio {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+  max-width: 90%;
+}
+
+/* buttons */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.btn {
+  background-color: #ffffff;
+  padding: 1em;
+  box-shadow: 0 1em 1.2em #e9e9ea;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+#like-icon,
+#nope-icon {
+  display: flex;
+  max-width: 1.5em;
+}
+
+#like-btn:hover,
+#like-btn:focus {
+  background-color: #dbfff4;
+  box-shadow: 0 1em 1.2em #ccf1e6;
+  cursor: poiner;
+}
+
+#nope-btn:hover,
+#nope-btn:focus {
+  background: #ffe7ef;
+  box-shadow: 0 1em 1.2em #edd9df;
+  cursor: poiner;
+}
+
+/* end message */
+.end-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30em;
+}
+
+.end-message p {
+  padding: 2em;
+  border: 2px solid pink;
+  border-radius: 5em;
+}
