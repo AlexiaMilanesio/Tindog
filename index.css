@@ -21,6 +21,7 @@ header {
 
 /* dog picture */
 .dog-picture-container {
+  margin: auto;
   display: flex;
   justify-content: center;
   position: relative;
@@ -116,9 +117,10 @@ header {
   border-radius: 5em;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .dog-picture-container {
-    max-height: 85vh;
+    max-height: 80vh;
+    max-width: 80vh;
   }
 
   .dog-picture {
@@ -126,6 +128,13 @@ header {
   }
 }
 
-@media (max-width: 500px) {
-  
+@media (max-width: 450px) {
+  main {
+    margin-top: 10%;
+  }
+
+  .btn-container {
+    margin-top: 5%;
+  }
+
 }
